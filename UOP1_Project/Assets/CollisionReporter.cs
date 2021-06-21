@@ -6,7 +6,7 @@ public class CollisionReporter : MonoBehaviour
 {
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.gameObject.name == "BigRock2PressurePlate")
+        if (hit.gameObject.name.Contains("PressurePlate"))
         {
             hit.gameObject.SendMessage("PlayerHit", hit, SendMessageOptions.DontRequireReceiver);
         }
