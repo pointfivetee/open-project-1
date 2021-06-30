@@ -141,6 +141,18 @@ MonoBehaviour:
   singLong: {fileID: 0}
   talk: {fileID: 11400000, guid: efd56f3ee0f40204e86ddb3689497004, type: 2}
   footstep: {fileID: 11400000, guid: 412141fe54999534a8d2800c2a567b55, type: 2}
+--- !u!114 &-6707621047517788309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866729951445509498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8761ec5e184784cf989929c8d442c173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1524077949592066091
 PrefabInstance:
   m_ObjectHideFlags: 0
