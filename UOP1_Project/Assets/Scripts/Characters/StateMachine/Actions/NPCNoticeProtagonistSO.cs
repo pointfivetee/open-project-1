@@ -16,8 +16,8 @@ public class NPCNoticeProtagonist : StateAction
 	Transform _lookTarget;
 	Transform _actorTransform;
 	Vector3 _defaultLookVector = new Vector3(0f, 0f, 1f);
+	float _headTurnSpeed = 6f;
 
-	Quaternion rotationOnEnter;
 	public override void Awake(StateMachine stateMachine)
 	{
 		_protagonist = ((NPCNoticeProtagonistSO)OriginSO).playerAnchor;
@@ -37,10 +37,12 @@ public class NPCNoticeProtagonist : StateAction
 		Debug.Log("_protagonist = " + _protagonist);
 		if (_protagonist.isSet && _headTurner != null && _headTurner.isPlayerInNoticeZone)
 		{
-			Vector3 relativePos = _protagonist.Transform.position - _actorTransform.position;
-			_lookTarget.position = _protagonist.Transform.position;
+			Vector3 direction = _protagonist.Transform.position - _lookTarget.position;
+			//_lookTarget.position = _protagonist.Transform.position;
+			_lookTarget.position += direction.normalized * Time.deltaTime * _headTurnSpeed;
 		} else {
-			_lookTarget.localPosition = _defaultLookVector;
+			Vector3 direction = _defaultLookVector - _lookTarget.localPosition;
+			_lookTarget.localPosition += direction.normalized * Time.deltaTime * _headTurnSpeed;
 		}
 	}
 
@@ -51,6 +53,6 @@ public class NPCNoticeProtagonist : StateAction
 
 	public override void OnStateExit()
 	{
-		//_actorTransform.rotation = rotationOnEnter;
+
 	}
 }
