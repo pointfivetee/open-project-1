@@ -21,20 +21,20 @@ public class NPCNoticeProtagonist : StateAction
 	public override void Awake(StateMachine stateMachine)
 	{
 		_protagonist = ((NPCNoticeProtagonistSO)OriginSO).playerAnchor;
-        if (stateMachine.TryGetComponent<Component>(out Component c))
-        {
-            if (c.TryGetComponent<HeadTurner>(out HeadTurner h))
+            if (stateMachine.gameObject.TryGetComponent<HeadTurner>(out HeadTurner h))
             {
                 _headTurner = h;
 				_lookTarget = h.lookTarget;
             }
-        }
 	    _actorTransform = stateMachine.transform;
 		//rotationOnEnter = _actorTransform.rotation;
+		Debug.Log("_headTurner = " + _headTurner);
+		Debug.Log("for " + stateMachine.gameObject.name);
 	}
 
 	public override void OnUpdate()
 	{
+		Debug.Log("_protagonist = " + _protagonist);
 		if (_protagonist.isSet && _headTurner != null && _headTurner.isPlayerInNoticeZone)
 		{
 			Vector3 relativePos = _protagonist.Transform.position - _actorTransform.position;

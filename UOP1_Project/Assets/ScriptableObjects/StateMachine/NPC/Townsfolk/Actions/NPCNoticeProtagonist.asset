@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbed4f22c40c4ab4b7e68aa2a03c3b8, type: 3}
   m_Name: NPCNoticeProtagonist
   m_EditorClassIdentifier: 
-  playerAnchor: {fileID: 0}
+  playerAnchor: {fileID: 11400000, guid: 35fc4039342b6ba458d0d4429e89ee74, type: 2}

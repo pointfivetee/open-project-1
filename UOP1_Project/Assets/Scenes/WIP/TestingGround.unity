@@ -20867,7 +20867,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh170068
+  m_Name: pb_Mesh64260
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29351,6 +29351,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Townsfolk_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866729951445509498, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3681583659869480704, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
         type: 3}
@@ -39906,6 +39911,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BardHare (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3351096123413661336, guid: 7f3c311f1ca46334ab26b1adfc5be02f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3c311f1ca46334ab26b1adfc5be02f, type: 3}
 --- !u!1001 &897696379
@@ -43929,6 +43939,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FryKing
+      objectReference: {fileID: 0}
+    - target: {fileID: 6627139844881529283, guid: 27c7b99622d41f04ba08f0f122783c20,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7512624128401615669, guid: 27c7b99622d41f04ba08f0f122783c20,
         type: 3}
@@ -49207,6 +49222,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Townsfolk_M (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5054559148327267577, guid: 661c491ac76af4b429f8a8c0e6e8c762,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5579597578339563075, guid: 661c491ac76af4b429f8a8c0e6e8c762,
         type: 3}
       propertyPath: m_RootOrder
@@ -53798,32 +53818,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7942665568167783732, guid: 661c491ac76af4b429f8a8c0e6e8c762,
+    - target: {fileID: 8780906754404244754, guid: 661c491ac76af4b429f8a8c0e6e8c762,
         type: 3}
-      propertyPath: _enterZone.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 5054559148327267577, guid: 661c491ac76af4b429f8a8c0e6e8c762,
-        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 661c491ac76af4b429f8a8c0e6e8c762, type: 3}
---- !u!1 &1314470425 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5054559148327267577, guid: 661c491ac76af4b429f8a8c0e6e8c762,
-    type: 3}
-  m_PrefabInstance: {fileID: 1314470424}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1314470426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1314470425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8861b7e7173d04f9391942616e8b8e18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1327623865
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54691,6 +54692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Townsfolk_M (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054559148327267577, guid: 661c491ac76af4b429f8a8c0e6e8c762,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5579597578339563075, guid: 661c491ac76af4b429f8a8c0e6e8c762,
         type: 3}
@@ -61366,6 +61372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Townsfolk_M (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5054559148327267577, guid: 661c491ac76af4b429f8a8c0e6e8c762,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5579597578339563075, guid: 661c491ac76af4b429f8a8c0e6e8c762,
         type: 3}
@@ -69450,27 +69461,27 @@ PrefabInstance:
     - target: {fileID: 1657732992883833910, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.08864839
+      value: -0.08864835
       objectReference: {fileID: 0}
     - target: {fileID: 1657732992883833910, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.026336027
+      value: 0.026336016
       objectReference: {fileID: 0}
     - target: {fileID: 2808035858438402709, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.102249905
+      value: 0.10224992
       objectReference: {fileID: 0}
     - target: {fileID: 2808035858438402709, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.08917595
+      value: -0.08917594
       objectReference: {fileID: 0}
     - target: {fileID: 2808035858438402709, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.024490178
+      value: 0.024490176
       objectReference: {fileID: 0}
     - target: {fileID: 8745341640208226293, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
@@ -69535,12 +69546,12 @@ PrefabInstance:
     - target: {fileID: 8745341642014614482, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000034239772
+      value: 0.00000003253001
       objectReference: {fileID: 0}
     - target: {fileID: 8745341642014614482, guid: 45632f0a227c860489bcba0eb1f4ec3e,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000071622215
+      value: -0.0000000068045765
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 45632f0a227c860489bcba0eb1f4ec3e, type: 3}
@@ -76767,6 +76778,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Townsfolk_F (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1866729951445509498, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3681583659869480704, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77271,6 +77287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Townsfolk_F
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866729951445509498, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3681583659869480704, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
         type: 3}
@@ -78610,6 +78631,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Townsfolk_F (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1866729951445509498, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3681583659869480704, guid: 3e6369ee29ebc1444a0da9ff03d7a7dc,
         type: 3}
