@@ -18,7 +18,6 @@ public class NPCFaceProtagonist : StateAction
 	{
 		_actor = stateMachine.transform;
 		_protagonist = ((NPCFaceProtagonistSO)OriginSO).playerAnchor;
-        Debug.Log("Face _protagonist = " + _protagonist);
 		rotationOnEnter = _actor.rotation;
 	}
 

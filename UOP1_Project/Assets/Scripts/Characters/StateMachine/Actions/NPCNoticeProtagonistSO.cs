@@ -13,38 +13,34 @@ public class NPCNoticeProtagonist : StateAction
 {
 	TransformAnchor _protagonist;
     HeadTurner _headTurner;
+	Transform _lookTarget;
 	Transform _actorTransform;
+	Vector3 _defaultLookVector = new Vector3(0f, 0f, 1f);
 
 	Quaternion rotationOnEnter;
 	public override void Awake(StateMachine stateMachine)
 	{
 		_protagonist = ((NPCNoticeProtagonistSO)OriginSO).playerAnchor;
-        Debug.Log("Notice _protagonist = " + _protagonist);
         if (stateMachine.TryGetComponent<Component>(out Component c))
         {
-            //Debug.Log(c.name);
             if (c.TryGetComponent<HeadTurner>(out HeadTurner h))
             {
                 _headTurner = h;
-                //Debug.Log(h.name);
+				_lookTarget = h.lookTarget;
             }
         }
 	    _actorTransform = stateMachine.transform;
-		rotationOnEnter = _actorTransform.rotation;
+		//rotationOnEnter = _actorTransform.rotation;
 	}
 
 	public override void OnUpdate()
 	{
-        //Debug.Log("_headturner = " + _headTurner);
-        //Debug.Log("_protagonist = " + _protagonist);
-		if (_protagonist != null && _protagonist.isSet && _headTurner != null && _headTurner.isPlayerInNoticeZone)
+		if (_protagonist.isSet && _headTurner != null && _headTurner.isPlayerInNoticeZone)
 		{
 			Vector3 relativePos = _protagonist.Transform.position - _actorTransform.position;
-			relativePos.y = 0f; // Force rotation to be only on Y axis.
-
-			Quaternion rotation = Quaternion.LookRotation(relativePos);
-            Debug.Log("Notice player: " + rotation);
-			_actorTransform.rotation = rotation;
+			_lookTarget.position = _protagonist.Transform.position;
+		} else {
+			_lookTarget.localPosition = _defaultLookVector;
 		}
 	}
 
@@ -55,6 +51,6 @@ public class NPCNoticeProtagonist : StateAction
 
 	public override void OnStateExit()
 	{
-	 _actorTransform.rotation = rotationOnEnter;
+		//_actorTransform.rotation = rotationOnEnter;
 	}
 }
